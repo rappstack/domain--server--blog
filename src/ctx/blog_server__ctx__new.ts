@@ -1,9 +1,8 @@
 import { blog__ctx__new } from '@btakita/domain--all--blog'
 import { Astro__set } from '@btakita/domain--server'
-import { type Site } from '@btakita/ui--server--blog'
 import { type APIContext, type AstroGlobal } from 'astro'
 import { logo_image__set, type LogoImage } from '../logo'
-import { site__set } from '../site'
+import { type Site, site__set } from '../site'
 import { type Social, socials__set } from '../social'
 export function blog_server__ctx__new(
 	Astro:APIContext|AstroGlobal,
