@@ -6,5 +6,14 @@ export const [
 	site_,
 	site__set,
 	site__memo,
-] = be_atom_memo_tuple5_(()=>
+] = be_atom_memo_tuple5_('site', ()=>
 	atom_<Site>())
+export type Site = {
+	website:string
+	author:string
+	desc:string
+	title:string
+	og_image?:string
+	light_and_dark_mode:boolean
+	post_per_page:number
+}

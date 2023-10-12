@@ -4,15 +4,16 @@
   "type": "module",
   "dependencies": {
     "@btakita/domain--all--blog": "workspace:*",
+    "@ctx-core/function": "^21.20.1",
     "@ctx-core/nanostores": "^6.0.12",
     "@ctx-core/solid-nanostores": "^19.0.3",
-    "astro": "^3.2.4",
+    "astro": "^3.3.0",
     "zod": "^3.22.4"
   },
   "devDependencies": {
     "bun-types": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.2.2"
   }
 }
