@@ -12,6 +12,7 @@ export const Post__schema = z.object({
 	}),
 	updated_date: z.coerce.date().optional(),
 	hero_image: z.string().optional(),
+	tags: z.array(z.string()).default(["others"]),
 } as {
-	[k in keyof Post]:ZodType<Post[k]>
+	[k in keyof Post['data']]:ZodType<Post['data'][k]>
 })
