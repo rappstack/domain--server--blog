@@ -1,5 +1,4 @@
-import { z } from 'zod'
-import type { ZodType } from 'zod/lib/types'
+import { z, type ZodType } from 'zod'
 import { type Post } from './Post.ts'
 export const Post__schema = z.object({
 	title: z.string(),
