@@ -71,7 +71,7 @@ export function site__og_template__new(ctx:Ctx) {
 									}),
 									h('p', {
 										style: { fontSize: 28 },
-										children: site_(ctx).desc,
+										children: site_(ctx).description,
 									}),
 								],
 							}),

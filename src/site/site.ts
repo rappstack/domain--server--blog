@@ -11,7 +11,7 @@ export const [
 export type Site = {
 	website:string
 	author:string
-	desc:string
+	description:string
 	title:string
 	og_image?:string
 	light_and_dark_mode:boolean
