@@ -1,5 +1,5 @@
+import { type Post } from '@btakita/domain--all--blog'
 import { z, type ZodType } from 'zod'
-import { type Post } from './Post.ts'
 export const Post__schema = z.object({
 	title: z.string(),
 	description: z.string(),
