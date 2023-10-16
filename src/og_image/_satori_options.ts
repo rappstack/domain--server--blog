@@ -9,20 +9,25 @@ const [
 	const _satori_options$ = atom_<SatoriOptions>()
 	onStart(_satori_options$, ()=>{
 		onStop(_satori_options$, _fonts$_(ctx).subscribe(_fonts=>{
-			const { regular_font, bold_font } = _fonts
+			const {
+				regular_font,
+				load__regular_font,
+				bold_font,
+				load__bold_font
+			} = _fonts!
 			_satori_options$.$ = {
 				width: 1200,
 				height: 630,
 				embedFont: true,
 				fonts: [
 					{
-						name: 'IBM Plex Mono',
+						name: load__regular_font.name,
 						data: regular_font,
-						weight: 400,
-						style: 'normal',
+						weight: load__regular_font.weight,
+						style: load__regular_font.style,
 					},
 					{
-						name: 'IBM Plex Mono',
+						name: 'Atkinson Hyperlegible',
 						data: bold_font,
 						weight: 600,
 						style: 'normal',
