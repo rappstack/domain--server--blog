@@ -1,7 +1,7 @@
 import { atom_, be_computed_pair_, onStart, onStop, subscribe_wait } from '@ctx-core/nanostores'
 import { type SatoriOptions } from 'satori'
-import { _fonts$_ } from './_fonts.ts'
-import { _og_image__ctx } from './_og_image__ctx.ts'
+import { _fonts$_ } from './_fonts'
+import { _og_image__ctx } from './_og_image__ctx'
 const [
 	_satori_options$_,
 	_satori_options_
@@ -33,6 +33,9 @@ const [
 	})
 	return _satori_options$
 })
-export async function _satori_potions__load() {
-	return subscribe_wait(_satori_options$_(_og_image__ctx))
+export async function _satori_options__load():Promise<SatoriOptions> {
+	return subscribe_wait(
+		_satori_options$_(_og_image__ctx),
+			$=>$,
+		10_000)
 }

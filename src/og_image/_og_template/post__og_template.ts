@@ -1,8 +1,8 @@
+import { type Post } from '@btakita/domain--all--blog'
 import { type Ctx } from '@ctx-core/object'
-import type { CollectionEntry } from 'astro:content'
 import { site_ } from '../../site'
 import { h } from './h'
-export function post__og_template__new(ctx:Ctx, post:CollectionEntry<'posts'>) {
+export function post__og_template__new(ctx:Ctx, post:Post) {
 	return h('div', {
 		style: {
 			background: '#fefbfb',
