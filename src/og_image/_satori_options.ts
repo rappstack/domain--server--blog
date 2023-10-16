@@ -1,4 +1,4 @@
-import { atom_, be_computed_pair_, onStart, onStop, subscribe_wait } from '@ctx-core/nanostores'
+import { atom_, be_computed_pair_, onMount, subscribe_wait } from '@ctx-core/nanostores'
 import { type SatoriOptions } from 'satori'
 import { _fonts$_ } from './_fonts'
 import { _og_image__ctx } from './_og_image__ctx'
@@ -7,8 +7,8 @@ const [
 	_satori_options_
 ] = be_computed_pair_('_satori_options', ctx=>{
 	const _satori_options$ = atom_<SatoriOptions>()
-	onStart(_satori_options$, ()=>{
-		onStop(_satori_options$, _fonts$_(ctx).subscribe(_fonts=>{
+	onMount(_satori_options$, ()=>
+		_fonts$_(ctx).subscribe(_fonts=>{
 			const {
 				regular_font,
 				load__regular_font,
@@ -27,15 +27,14 @@ const [
 						style: load__regular_font.style,
 					},
 					{
-						name: 'Atkinson Hyperlegible',
+						name: load__bold_font.name,
 						data: bold_font,
-						weight: 600,
-						style: 'normal',
+						weight: load__bold_font.weight,
+						style: load__bold_font.style,
 					},
 				],
 			}
 		}))
-	})
 	return _satori_options$
 })
 export async function _satori_options__load():Promise<SatoriOptions> {

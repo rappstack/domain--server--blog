@@ -1,5 +1,5 @@
-import { type nullish, nullish__check_ } from '@ctx-core/function'
-import { atom_, be_computed_pair_, computed_, onStart, onStop } from '@ctx-core/nanostores'
+import { noop, type nullish, nullish__check_ } from '@ctx-core/function'
+import { atom_, be_computed_pair_, computed_, onMount } from '@ctx-core/nanostores'
 import { type Ctx } from '@ctx-core/object'
 import { load__bold_font_, type load__font_T, load__regular_font_ } from './font'
 export const [
@@ -23,10 +23,8 @@ export const [
 			_fonts$.set(nullish)
 		})
 	})
-	onStart(_fonts$, ()=>{
-		onStop(_fonts$, _fonts__load__subscribe$.listen(()=>{
-		}))
-	})
+	onMount(_fonts$, ()=>
+		_fonts__load__subscribe$.listen(noop))
 	return _fonts$
 })
 async function _fonts__load(ctx:Ctx):Promise<_font_T> {
