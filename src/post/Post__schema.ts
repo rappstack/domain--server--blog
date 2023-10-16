@@ -1,6 +1,7 @@
 import { type Post } from '@btakita/domain--all--blog'
 import { z, type ZodType } from 'zod'
 export const Post__schema = z.object({
+	author: z.string(),
 	title: z.string(),
 	description: z.string(),
 	// Transform string to Date object
