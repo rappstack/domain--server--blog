@@ -1,2 +1,2 @@
 # domain--server--blog
-domain logic on server for blogs
+domain logic targeting the server for blogs
