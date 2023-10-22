@@ -28,7 +28,7 @@ export {
 export function cite(ctx:Ctx, uuid:string, html:string):citation_T {
 	let citation:citation_T|null = null
 	let id:number = citation_o_(ctx).id
-	const citation_a = citation_o_(ctx).citation_a
+	const { citation_a } = citation_o_(ctx)
 	if (uuid_M_citation_(ctx).has(uuid)) {
 		citation = uuid_M_citation_(ctx).get(uuid)!
 		citation.html = html

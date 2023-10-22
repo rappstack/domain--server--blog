@@ -6,9 +6,9 @@
   "dependencies": {
     "@btakita/domain--all--blog": "workspace:*",
     "@ctx-core/function": "^21.20.2",
-    "@ctx-core/nanostores": "^7.0.0",
+    "@ctx-core/nanostores": "^7.0.3",
     "@ctx-core/object": "^28.2.1",
-    "@ctx-core/solid-nanostores": "^20.0.0",
+    "@ctx-core/solid-nanostores": "^20.0.3",
     "@resvg/resvg-js": "^2.6.0",
     "astro": "^3.3.2",
     "github-slugger": "^2.0.0",
