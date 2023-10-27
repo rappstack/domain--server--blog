@@ -8,16 +8,16 @@
     "@ctx-core/function": "^21.20.2",
     "@ctx-core/nanostores": "^7.0.3",
     "@ctx-core/object": "^28.2.1",
-    "@ctx-core/solid-nanostores": "^20.0.3",
+    "@ctx-core/solid-nanostores": "^20.0.4",
     "@resvg/resvg-js": "^2.6.0",
-    "astro": "^3.3.2",
+    "astro": "^3.4.0",
     "github-slugger": "^2.0.0",
     "react": "^18.2.0",
     "satori": "^0.10.9",
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@types/react": "^18.2.31",
+    "@types/react": "^18.2.33",
     "bun-types": "latest"
   },
   "peerDependencies": {
