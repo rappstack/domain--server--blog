@@ -1,13 +1,10 @@
-import { atom_ } from '@ctx-core/nanostores'
-import { be_atom_memo_tuple5_ } from '@ctx-core/solid-nanostores'
+import { val__be_state_triple_ } from '@btakita/domain--all--blog'
 export const [
 	logo_image$_,
 	logo_image_,
 	logo_image__set,
-	logo_image__memo,
-	logo_image__memo_,
-] = be_atom_memo_tuple5_('logo_image', ()=>
-	atom_<LogoImage>())
+] = val__be_state_triple_<LogoImage|undefined>('logo_image', ()=>
+	undefined)
 export interface LogoImage {
 	enable:boolean
 	svg:boolean

@@ -1,4 +1,4 @@
-export * from './citation'
+export * from './footnote'
 export * from './ctx'
 export * from './logo'
 export * from './og_image'
