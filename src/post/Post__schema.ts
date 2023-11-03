@@ -15,6 +15,7 @@ export const Post__schema = z.object({
 	hero_image: z.string().optional(),
 	og_image: z.string().optional(),
 	tags: z.array(z.string()).default(["others"]),
+	featured: z.boolean().optional(),
 	draft: z.boolean().optional(),
 	canonical_url: z.string().optional(),
 } as {
