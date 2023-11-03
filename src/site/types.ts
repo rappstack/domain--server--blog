@@ -5,5 +5,6 @@ export type Site = {
 	title:string
 	og_image?:string
 	light_and_dark_mode:boolean
-	post_per_page:number
+	page__post_count:number
+	home__page__post_count:number
 }
