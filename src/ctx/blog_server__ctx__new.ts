@@ -1,5 +1,6 @@
-import { blog__ctx__new, van__set } from '@btakita/domain--all--blog'
+import { blog__ctx__new } from '@btakita/domain--all--blog'
 import { Astro__set } from '@btakita/domain--server'
+import { props_clean_van__new, van__set } from '@ctx-core/vanjs'
 import { type APIContext, type AstroGlobal } from 'astro'
 import van from 'mini-van-plate/van-plate'
 import { type LogoImage, logo_image__set } from '../logo'
@@ -14,7 +15,7 @@ export function blog_server__ctx__new(
 	}
 ) {
 	const ctx = blog__ctx__new()
-	van__set(ctx, van)
+	van__set(ctx, props_clean_van__new(van))
 	Astro__set(ctx, Astro)
 	logo_image__set(ctx, logo_image)
 	site__set(ctx, site)

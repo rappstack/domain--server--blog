@@ -1,16 +1,15 @@
-import { be_state_triple_, van_ } from '@btakita/domain--all--blog'
 import { be_, type Ctx } from '@ctx-core/object'
+import { val__be_state_triple__new } from '@ctx-core/vanjs'
 const uuid_M_footnote_ = be_(()=>
 	new Map<string, footnote_T>)
 const [
 	footnote_o$_,
 	footnote_o_,
 	footnote_o__set,
-] = be_state_triple_(ctx=>
-	van_(ctx).state<footnote_o_T>({
-		seq: 0,
-		footnote_a: []
-	}))
+] = val__be_state_triple__new(()=>({
+	seq: 0,
+	footnote_a: []
+} as footnote_o_T))
 export {
 	footnote_o$_,
 	footnote_o_,
