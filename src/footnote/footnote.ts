@@ -2,7 +2,7 @@ import { be_, type Ctx } from '@ctx-core/object'
 import { val__be_state_triple__new } from '@ctx-core/vanjs'
 const uuid_M_footnote_ = be_(()=>
 	new Map<string, footnote_T>)
-const [
+export const [
 	footnote_o$_,
 	footnote_o_,
 	footnote_o__set,
@@ -10,10 +10,6 @@ const [
 	seq: 0,
 	footnote_a: []
 } as footnote_o_T))
-export {
-	footnote_o$_,
-	footnote_o_,
-}
 /**
  * @param {Ctx}ctx
  * @param {string}id - handle Astrojs progressive rendering
