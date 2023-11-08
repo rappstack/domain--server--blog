@@ -6,10 +6,10 @@
   "dependencies": {
     "@btakita/domain--all--blog": "workspace:*",
     "@ctx-core/function": "^21.20.2",
-    "@ctx-core/nanostores": "^7.0.5",
+    "@ctx-core/nanostores": "^7.0.6",
     "@ctx-core/object": "^29.0.0",
-    "@ctx-core/solid-nanostores": "^21.0.0",
-    "@ctx-core/vanjs": "1.7.2",
+    "@ctx-core/solid-nanostores": "^21.0.1",
+    "@ctx-core/vanjs": "2.1.0",
     "@resvg/resvg-js": "^2.6.0",
     "astro": "^3.4.3",
     "github-slugger": "^2.0.0",
@@ -18,7 +18,7 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@types/react": "^18.2.36",
+    "@types/react": "^18.2.37",
     "bun-types": "latest"
   },
   "peerDependencies": {
