@@ -9,7 +9,7 @@
     "@ctx-core/nanostores": "^7.0.6",
     "@ctx-core/object": "^29.0.0",
     "@ctx-core/solid-nanostores": "^21.0.1",
-    "@ctx-core/vanjs": "2.1.1",
+    "@ctx-core/vanjs": "2.1.2",
     "@resvg/resvg-js": "^2.6.0",
     "astro": "^3.4.3",
     "github-slugger": "^2.0.0",
