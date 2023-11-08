@@ -6,7 +6,7 @@ export const [
 	footnote_o$_,
 	footnote_o_,
 	footnote_o__set,
-] = val__be_state_triple__new(()=>({
+] = val__be_state_triple__new('footnote_o', ()=>({
 	seq: 0,
 	footnote_a: []
 } as footnote_o_T))
