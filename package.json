@@ -11,7 +11,7 @@
     "@ctx-core/solid-nanostores": "^21.0.1",
     "@ctx-core/vanjs": "2.1.2",
     "@resvg/resvg-js": "^2.6.0",
-    "astro": "^3.4.3",
+    "astro": "^3.4.4",
     "github-slugger": "^2.0.0",
     "react": "^18.2.0",
     "satori": "^0.10.9",
