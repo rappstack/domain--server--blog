@@ -1,1 +1,1 @@
-export * from './blog_server__ctx__new'
+export * from './blog_server__ctx__new.js'

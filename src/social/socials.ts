@@ -1,8 +1,9 @@
-import { val__be_state_triple__new } from '@ctx-core/vanjs'
+import { be_sig_triple_ } from 'rmemo'
 import { type Social } from './types.ts'
 export const [
 	socials$_,
 	socials_,
 	socials__set,
-] = val__be_state_triple__new<Social[]>(ctx=>
-	[])
+] = be_sig_triple_<Social[]>(ctx=>
+		[],
+	{ id: 'socials' })

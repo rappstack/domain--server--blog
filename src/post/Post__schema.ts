@@ -14,7 +14,7 @@ export const Post__schema = z.object({
 	updated_date: z.coerce.date().optional(),
 	hero_image: z.string().optional(),
 	og_image: z.string().optional(),
-	tags: z.array(z.string()).default(["others"]),
+	tags: z.array(z.string()).default(['others']),
 	featured: z.boolean().optional(),
 	draft: z.boolean().optional(),
 	canonical_url: z.string().optional(),

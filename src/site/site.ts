@@ -1,8 +1,9 @@
-import { val__be_state_triple__new } from '@ctx-core/vanjs'
-import type { Site } from './types'
+import { be_sig_triple_ } from 'relementjs'
+import type { Site } from './types.js'
 export const [
 	site$_,
 	site_,
 	site__set,
-] = val__be_state_triple__new<Site|null>('site', ()=>
-	null)
+] = be_sig_triple_<Site|null>(()=>
+		null,
+	{ id: 'site' })

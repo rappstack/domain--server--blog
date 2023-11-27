@@ -1,5 +1,5 @@
-import { type Ctx } from '@ctx-core/object'
-import { site__page__post_count_ } from '../site'
+import { type Ctx } from 'ctx-core/be'
+import { site__page__post_count_ } from '../site/index.js'
 export function page_number_a__new(ctx:Ctx, numberOfPosts:number) {
 	const numberOfPages = numberOfPosts / Number(site__page__post_count_(ctx))
 	let pageNumbers:number[] = []

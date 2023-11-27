@@ -1,2 +1,2 @@
-export * from './socials'
-export * from './types'
+export * from './socials.js'
+export * from './types.js'

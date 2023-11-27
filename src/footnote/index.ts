@@ -1,1 +1,1 @@
-export * from './footnote.ts'
+export * from './footnote.js'

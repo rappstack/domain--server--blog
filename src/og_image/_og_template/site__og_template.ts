@@ -1,102 +1,100 @@
+import { style_ } from '@ctx-core/html'
 import { type Ctx } from '@ctx-core/object'
-import { site_ } from '../../site'
-import { h } from './h'
+import { type ReactNode } from 'react'
+import { relement__use } from 'relementjs'
+import { div_, p_, span_ } from 'relementjs/html'
+import { server__base__relement } from 'relementjs/server'
+import { html } from 'satori-html'
+import { site_ } from '../../site/index.js'
 export function site__og_template__new(ctx:Ctx) {
-	return h('div', {
-		style: {
-			background: '#fefbfb',
-			width: '100%',
-			height: '100%',
-			display: 'flex',
-			alignItems: 'center',
-			justifyContent: 'center',
-		},
-		children: [
-			h('div', {
-				style: {
-					position: 'absolute',
-					top: '-1px',
-					right: '-1px',
-					border: '4px solid #000',
-					background: '#ecebeb',
-					opacity: '0.9',
-					borderRadius: '4px',
-					display: 'flex',
-					justifyContent: 'center',
-					margin: '2.5rem',
-					width: '88%',
-					height: '80%',
-				},
-			}),
-			h('div', {
-				style: {
-					border: '4px solid #000',
+	relement__use(server__base__relement)
+	return html(
+		div_<'server'>({
+			style: style_({
 					background: '#fefbfb',
-					borderRadius: '4px',
+					width: '100%',
+					height: '100%',
 					display: 'flex',
-					justifyContent: 'center',
-					margin: '2rem',
-					width: '88%',
-					height: '80%',
+					'align-items': 'center',
+					'justify-content': 'center',
 				},
-				children: [
-					h('div', {
-						style: {
+				div_({
+					style: style_({
+						position: 'absolute',
+						top: '-1px',
+						right: '-1px',
+						border: '4px solid #000',
+						background: '#ecebeb',
+						opacity: '0.9',
+						'border-radius': '4px',
+						display: 'flex',
+						'justify-content': 'center',
+						margin: '2.5rem',
+						width: '88%',
+						height: '80%',
+					})
+				}),
+				div_({
+						style: style_({
+							border: '4px solid #000',
+							background: '#fefbfb',
+							'border-radius': '4px',
 							display: 'flex',
-							flexDirection: 'column',
-							justifyContent: 'space-between',
-							margin: '20px',
-							width: '90%',
-							height: '90%',
+							'justify-content': 'center',
+							margin: '2rem',
+							width: '88%',
+							height: '80%',
+						})
+					},
+					div_({
+							style: style_({
+								display: 'flex',
+								'flex-direction': 'column',
+								'justify-content': 'space-between',
+								margin: '20px',
+								width: '90%',
+								height: '90%',
+							})
 						},
-						children: [
-							h('div', {
-								style: {
+						div_({
+								style: style_({
 									display: 'flex',
-									flexDirection: 'column',
-									justifyContent: 'center',
-									alignItems: 'center',
+									'flex-direction': 'column',
+									'justify-content': 'center',
+									'align-items': 'center',
 									height: '90%',
-									maxHeight: '90%',
+									'max-deight': '90%',
 									overflow: 'hidden',
-									textAlign: 'center',
-								},
-								children: [
-									h('p', {
-										style: {
-											fontSize: 72,
-											fontWeight: 'bold',
-										},
-										children: site_(ctx).title,
-									}),
-									h('p', {
-										style: { fontSize: 28 },
-										children: site_(ctx).description,
-									}),
-								],
-							}),
-							h('div', {
-								style: {
+									'text-align': 'center',
+								})
+							},
+							p_({
+								style: style_({
+									'font-size': 72,
+									'font-weight': 'bold',
+								})
+							}, site_(ctx).title),
+							p_({
+								style: style_({
+									'font-size': 28
+								})
+							}, site_(ctx).description)),
+						div_({
+							style: style_({
 									display: 'flex',
-									justifyContent: 'flex-end',
+									'justify-content': 'flex-end',
 									width: '100%',
-									marginBottom: '8px',
-									fontSize: 28,
+									'margin-bottom': '8px',
+									'font-size': 28,
 								},
-								children: [
-									h('span', {
-										style: {
-											overflow: 'hidden',
-											fontWeight: 'bold',
-										},
-										children: new URL(site_(ctx).website).hostname,
-									}),
-								],
-							}),
-						],
-					}),
-				],
-			}),
-		],
-	})
+								span_({
+									style: style_({
+										overflow: 'hidden',
+										'font-weight': 'bold',
+									}, new URL(site_(ctx).website).hostname)
+								}))
+						})
+					)))
+		}).render()
+	) as ReactNode
 }

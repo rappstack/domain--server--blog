@@ -1,13 +1,13 @@
-import { noop, type nullish, nullish__check_ } from '@ctx-core/function'
-import { atom_, be_computed_pair_, computed_, onMount } from '@ctx-core/nanostores'
+import { type nullish, nullish__check_ } from '@ctx-core/function'
 import { type Ctx } from '@ctx-core/object'
-import { load__bold_font_, type load__font_T, load__regular_font_ } from './font'
+import { be_sig_triple_ } from 'relementjs'
+import { load__bold_font_, type load__font_T, load__regular_font_ } from './font/index.js'
 export const [
 	_fonts$_,
 	_fonts_,
-] = be_computed_pair_(ctx=>{
-	const _fonts$ = atom_<_font_T|nullish>()
-	const _fonts__load__subscribe$ = computed_(()=>{
+] = be_sig_triple_<_font_T|nullish>(
+	()=>undefined,
+	(ctx, _fonts$)=>
 		nullish__check_([load__regular_font_(ctx), load__bold_font_(ctx)], async (
 			load__regular_font,
 			load__bold_font
@@ -17,16 +17,12 @@ export const [
 				load__regular_font === load__regular_font_(ctx)
 				&& load__bold_font === load__bold_font_(ctx)
 			) {
-				_fonts$.set(fonts)
+				_fonts$._ = fonts
 			}
 		}, nullish=>{
-			_fonts$.set(nullish)
-		})
-	})
-	onMount(_fonts$, ()=>
-		_fonts__load__subscribe$.listen(noop))
-	return _fonts$
-})
+			_fonts$._ = nullish
+		}),
+	{ id: '_fonts' })
 async function _fonts__load(ctx:Ctx):Promise<_font_T> {
 	// Regular Font
 	const load__regular_font = load__regular_font_(ctx)!

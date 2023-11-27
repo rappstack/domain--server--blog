@@ -1,15 +1,17 @@
-import { be_, type Ctx } from '@ctx-core/object'
-import { val__be_state_triple__new } from '@ctx-core/vanjs'
+/// <reference types="ctx-core/be" />
+import { be_, type Ctx } from 'ctx-core/be'
+import { be_sig_triple_ } from 'relementjs'
 const uuid_M_footnote_ = be_(()=>
 	new Map<string, footnote_T>)
 export const [
 	footnote_o$_,
 	footnote_o_,
 	footnote_o__set,
-] = val__be_state_triple__new('footnote_o', ()=>({
-	seq: 0,
-	footnote_a: []
-} as footnote_o_T))
+] = be_sig_triple_(()=>({
+		seq: 0,
+		footnote_a: []
+	} as footnote_o_T),
+	{ id: 'footnote_o' })
 /**
  * @param {Ctx}ctx
  * @param {string}id - handle Astrojs progressive rendering

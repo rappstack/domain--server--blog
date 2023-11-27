@@ -5,23 +5,23 @@
   "types": "src/index.ts",
   "dependencies": {
     "@btakita/domain--all--blog": "workspace:*",
-    "@ctx-core/function": "^21.20.2",
-    "@ctx-core/nanostores": "^7.0.8",
-    "@ctx-core/object": "^30.0.0",
-    "@ctx-core/solid-nanostores": "^23.0.0",
-    "@ctx-core/vanjs": "2.2.1",
+    "@ctx-core/html": "^11.6.31",
     "@resvg/resvg-js": "^2.6.0",
-    "astro": "^3.5.0",
+    "astro": "^3.6.0",
+    "ctx-core": "^4.8.0",
     "github-slugger": "^2.0.0",
     "react": "^18.2.0",
-    "satori": "^0.10.9",
+    "relementjs": "^0.14.1",
+    "rmemo": "^0.11.0",
+    "satori": "^0.10.11",
+    "satori-html": "^0.3.2",
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@types/react": "^18.2.37",
+    "@types/react": "^18.2.38",
     "bun-types": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.2"
   }
 }

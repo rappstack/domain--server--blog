@@ -1,1 +1,1 @@
-export * from './Post__schema'
+export * from './Post__schema.js'
