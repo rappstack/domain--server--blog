@@ -73,12 +73,12 @@ export function site__og_template__new(ctx:Ctx) {
 									'font-size': 72,
 									'font-weight': 'bold',
 								})
-							}, site_(ctx).title),
+							}, site_(ctx)?.title),
 							p_({
 								style: style_({
 									'font-size': 28
 								})
-							}, site_(ctx).description)),
+							}, site_(ctx)?.description)),
 						div_({
 							style: style_({
 									display: 'flex',
@@ -91,7 +91,7 @@ export function site__og_template__new(ctx:Ctx) {
 									style: style_({
 										overflow: 'hidden',
 										'font-weight': 'bold',
-									}, new URL(site_(ctx).website).hostname)
+									}, site_(ctx)?.website && new URL(site_(ctx)!.website).hostname)
 								}))
 						})
 					)))

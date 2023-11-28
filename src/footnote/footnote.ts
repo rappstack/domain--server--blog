@@ -17,7 +17,7 @@ export const [
  * @param {string}id - handle Astrojs progressive rendering
  * @param {string}html
  */
-export function footnote(ctx:Ctx, id:string, html:string):footnote_T {
+export function footnote__new(ctx:Ctx, id:string, html:string):footnote_T {
 	let footnote:footnote_T|null = null
 	let seq:number = footnote_o_(ctx).seq
 	const { footnote_a } = footnote_o_(ctx)

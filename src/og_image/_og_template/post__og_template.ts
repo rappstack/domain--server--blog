@@ -7,7 +7,6 @@ import { div_, p_, span_ } from 'relementjs/html'
 import { server__base__relement } from 'relementjs/server'
 import { html } from 'satori-html'
 import { site_ } from '../../site/index.js'
-import { h } from './h.js'
 export function post__og_template__new(ctx:Ctx, post:Post) {
 	relement__use(server__base__relement)
 	return html(
@@ -92,7 +91,7 @@ export function post__og_template__new(ctx:Ctx, post:Post) {
 							style: style_({
 								overflow: 'hidden',
 								'font-weight': 'bold',
-							}, site_(ctx).title)
+							}, site_(ctx)?.title)
 						}))))).render()
 	) as ReactNode
 }

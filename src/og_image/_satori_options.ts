@@ -37,7 +37,7 @@ const [
 		}
 	},
 	{ id: '_satori_options' })
-export async function _satori_options__load() {
+export function _satori_options__load() {
 	return rmemo__wait(
 		_satori_options$_(_og_image__ctx),
 		$=>$,
