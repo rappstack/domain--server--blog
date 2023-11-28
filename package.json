@@ -7,7 +7,7 @@
     "@btakita/domain--all--blog": "workspace:*",
     "@ctx-core/html": "^11.6.31",
     "@resvg/resvg-js": "^2.6.0",
-    "astro": "^3.6.1",
+    "astro": "^3.6.2",
     "ctx-core": "^4.8.0",
     "github-slugger": "^2.0.0",
     "react": "^18.2.0",
@@ -18,7 +18,7 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@types/react": "^18.2.38",
+    "@types/react": "^18.2.39",
     "bun-types": "latest"
   },
   "peerDependencies": {
