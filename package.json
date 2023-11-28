@@ -7,7 +7,7 @@
     "@btakita/domain--all--blog": "workspace:*",
     "@ctx-core/html": "^11.6.32",
     "@resvg/resvg-js": "^2.6.0",
-    "astro": "^3.6.2",
+    "astro": "^3.6.3",
     "ctx-core": "^4.8.1",
     "github-slugger": "^2.0.0",
     "react": "^18.2.0",
