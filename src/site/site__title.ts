@@ -1,4 +1,4 @@
-import { be_memo_pair_ } from 'ctx-core/all'
+import { be_memo_pair_ } from 'rmemo'
 import { nullish__none_ } from 'ctx-core/function'
 import { site_ } from './site.js'
 export const [
