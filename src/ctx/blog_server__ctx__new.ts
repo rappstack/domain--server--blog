@@ -1,4 +1,4 @@
-import { blog__ctx__new } from '@btakita/domain--all--blog'
+import { blog__ctx__new } from '@btakita/domain--any--blog'
 import { Astro__set } from '@btakita/domain--server'
 import { type APIContext, type AstroGlobal } from 'astro'
 import { relement__use } from 'relementjs'

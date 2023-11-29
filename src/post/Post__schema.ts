@@ -1,4 +1,4 @@
-import { type Post } from '@btakita/domain--all--blog'
+import { type Post } from '@btakita/domain--any--blog'
 import { z, type ZodType } from 'zod'
 export const Post__schema = z.object({
 	author: z.string(),

@@ -1,4 +1,4 @@
-import { type Post } from '@btakita/domain--all--blog'
+import { type Post } from '@btakita/domain--any--blog'
 export function sorted__posts__new(posts:Post[]) {
 	return (
 		posts

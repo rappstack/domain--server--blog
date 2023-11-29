@@ -1,4 +1,4 @@
-import { type Post } from '@btakita/domain--all--blog'
+import { type Post } from '@btakita/domain--any--blog'
 import { style_ } from '@ctx-core/html'
 import { type Ctx } from 'ctx-core/object'
 import { type ReactNode } from 'react'

@@ -1,4 +1,4 @@
-import { type Post, str__slug__new } from '@btakita/domain--all--blog'
+import { type Post, str__slug__new } from '@btakita/domain--any--blog'
 export function unique__tags__new(posts:Post[]) {
 	const filteredPosts = posts.filter(({ data })=>!data.draft)
 	const tags:string[] = filteredPosts

@@ -1,4 +1,4 @@
-import { type Post } from '@btakita/domain--all--blog'
+import { type Post } from '@btakita/domain--any--blog'
 import { type Ctx } from 'ctx-core/object'
 import satori from 'satori'
 import { post__og_template__new } from './_og_template/index.js'
