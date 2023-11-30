@@ -1,6 +1,6 @@
 import { type nullish } from '@ctx-core/function'
 import { be_sig_triple_ } from 'relementjs'
-import { type load__font_T } from './types.ts'
+import { type load__font_T } from './types.js'
 export const [
 	load__regular_font$_,
 	load__regular_font_,

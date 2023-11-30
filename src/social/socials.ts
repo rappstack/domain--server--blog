@@ -1,5 +1,5 @@
 import { be_sig_triple_ } from 'rmemo'
-import { type Social } from './types.ts'
+import { type Social } from './types.js'
 export const [
 	socials$_,
 	socials_,
