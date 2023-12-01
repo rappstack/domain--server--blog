@@ -1,5 +1,4 @@
-import type { ReactNode } from 'react'
-import type { JSX } from 'react'
+import type { JSX, ReactNode } from 'react'
 export function h<
 	// P extends JSX.HTMLElementTags['base']
 	P extends JSX.IntrinsicElements

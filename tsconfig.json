@@ -1,24 +1,22 @@
 {
-  "compilerOptions": {
-    "baseUrl": "src",
-    "jsxImportSource": "solid-js",
-    "jsx": "preserve",
-    "module": "esnext",
-    "target": "esnext",
-    "moduleResolution": "node",
-    "moduleDetection": "force",
-    "allowImportingTsExtensions": true,
-    "noEmit": true,
-    "composite": true,
-    "strict": true,
-    "downlevelIteration": true,
-    "skipLibCheck": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "esModuleInterop": true,
-    "allowJs": true,
-    "types": [
-      "bun-types" // add Bun global
-    ]
-  }
+	"compilerOptions": {
+		"baseUrl": "src",
+		"module": "esnext",
+		"target": "esnext",
+		"moduleResolution": "nodenext",
+		"moduleDetection": "force",
+		"allowImportingTsExtensions": true,
+		"noEmit": true,
+		"composite": true,
+		"strict": true,
+		"downlevelIteration": true,
+		"skipLibCheck": true,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"esModuleInterop": true,
+		"allowJs": true,
+		"types": [
+			"bun-types" // add Bun global
+		]
+	}
 }
