@@ -9,7 +9,7 @@ import { html } from 'satori-html'
 import { site_ } from '../../site/index.js'
 export function post__og_template__new(ctx:Ctx, post:Post) {
 	relement__use(server__base__relement)
-	return html(
+	return html('' +
 		div_<'server'>({
 				style: style_({
 					background: '#fefbfb',
@@ -92,6 +92,6 @@ export function post__og_template__new(ctx:Ctx, post:Post) {
 								overflow: 'hidden',
 								'font-weight': 'bold',
 							}, site_(ctx)?.title)
-						}))))).render()
+						})))))
 	) as ReactNode
 }

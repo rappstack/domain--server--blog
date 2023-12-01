@@ -8,7 +8,7 @@ import { html } from 'satori-html'
 import { site_ } from '../../site/index.js'
 export function site__og_template__new(ctx:Ctx) {
 	relement__use(server__base__relement)
-	return html(
+	return html('' +
 		div_<'server'>({
 			style: style_({
 					background: '#fefbfb',
@@ -95,6 +95,6 @@ export function site__og_template__new(ctx:Ctx) {
 								}))
 						})
 					)))
-		}).render()
+		})
 	) as ReactNode
 }
