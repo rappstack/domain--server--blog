@@ -5,20 +5,20 @@
 	"types": "src/index.ts",
 	"dependencies": {
 		"@btakita/domain--any--blog": "workspace:*",
-		"@ctx-core/html": "^11.6.32",
+		"@ctx-core/html": "^11.6.33",
 		"@resvg/resvg-js": "^2.6.0",
 		"astro": "^3.6.4",
-		"ctx-core": "^4.8.1",
+		"ctx-core": "^4.8.2",
 		"github-slugger": "^2.0.0",
 		"react": "^18.2.0",
-		"relementjs": "^0.17.1",
-		"rmemo": "^0.11.1",
+		"relementjs": "^0.17.2",
+		"rmemo": "^0.11.2",
 		"satori": "^0.10.11",
 		"satori-html": "^0.3.2",
 		"zod": "^3.22.4"
 	},
 	"devDependencies": {
-		"@types/react": "^18.2.40",
+		"@types/react": "^18.2.41",
 		"bun-types": "latest"
 	},
 	"peerDependencies": {
