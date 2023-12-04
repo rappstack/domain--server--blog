@@ -11,7 +11,7 @@
 		"ctx-core": "^4.9.0",
 		"github-slugger": "^2.0.0",
 		"react": "^18.2.0",
-		"relementjs": "^0.17.3",
+		"relementjs": "^0.18.0",
 		"rmemo": "^0.12.0",
 		"satori": "^0.10.11",
 		"satori-html": "^0.3.2",
