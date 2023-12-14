@@ -5,23 +5,23 @@
 	"types": "src/index.ts",
 	"dependencies": {
 		"@btakita/domain--any--blog": "workspace:*",
-		"@ctx-core/html": "^11.6.36",
+		"@ctx-core/html": "^11.6.55",
 		"@resvg/resvg-js": "^2.6.0",
-		"astro": "^3.6.4",
-		"ctx-core": "^4.10.0",
+		"astro": "^4.0.5",
+		"ctx-core": "^4.19.0",
 		"github-slugger": "^2.0.0",
 		"react": "^18.2.0",
-		"relementjs": "^0.21.1",
-		"rmemo": "^0.13.0",
+		"relementjs": "^0.29.3",
+		"rmemo": "^0.17.2",
 		"satori": "^0.10.11",
 		"satori-html": "^0.3.2",
 		"zod": "^3.22.4"
 	},
 	"devDependencies": {
-		"@types/react": "^18.2.42",
+		"@types/react": "^18.2.45",
 		"bun-types": "latest"
 	},
 	"peerDependencies": {
-		"typescript": "^5.3.2"
+		"typescript": "^5.3.3"
 	}
 }
