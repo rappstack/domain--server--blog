@@ -1,25 +1,25 @@
 import { type Post } from '@btakita/domain--any--blog'
 import { style_ } from '@ctx-core/html'
-import { type Ctx } from 'ctx-core/object'
 import { type ReactNode } from 'react'
 import { relement__use } from 'relementjs'
 import { div_, p_, span_ } from 'relementjs/html'
-import { server__base__relement } from 'relementjs/server'
+import { server__relement } from 'relementjs/server'
+import { type route_ctx_T } from 'relysjs'
 import { html } from 'satori-html'
 import { site_ } from '../../site/index.js'
-export function post__og_template__new(ctx:Ctx, post:Post) {
-	relement__use(server__base__relement)
+export function post__og_template__new(ctx:route_ctx_T, post:Post) {
+	relement__use(server__relement)
 	return html('' +
 		div_<'server'>({
-				style: style_({
-					background: '#fefbfb',
-					width: '100%',
-					height: '100%',
-					display: 'flex',
-					'align-items': 'center',
-					'justify-content': 'center',
-				})
-			},
+			style: style_({
+				background: '#fefbfb',
+				width: '100%',
+				height: '100%',
+				display: 'flex',
+				'align-items': 'center',
+				'justify-content': 'center',
+			})
+		}, [
 			div_({
 				style: style_({
 					position: 'absolute',
@@ -37,25 +37,25 @@ export function post__og_template__new(ctx:Ctx, post:Post) {
 				})
 			}),
 			div_({
-					border: '4px solid #000',
-					background: '#fefbfb',
-					'border-radius': '4px',
-					display: 'flex',
-					'justify-content': 'center',
-					margin: '2rem',
-					width: '88%',
-					height: '80%',
-				},
+				border: '4px solid #000',
+				background: '#fefbfb',
+				'border-radius': '4px',
+				display: 'flex',
+				'justify-content': 'center',
+				margin: '2rem',
+				width: '88%',
+				height: '80%',
+			}, [
 				div_({
-						style: style_({
-							display: 'flex',
-							'flex-direction': 'column',
-							'justify-content': 'space-between',
-							margin: '20px',
-							width: '90%',
-							height: '90%',
-						})
-					},
+					style: style_({
+						display: 'flex',
+						'flex-direction': 'column',
+						'justify-content': 'space-between',
+						margin: '20px',
+						width: '90%',
+						height: '90%',
+					})
+				}, [
 					p_({
 						style: style_({
 							'font-size': 72,
@@ -65,14 +65,14 @@ export function post__og_template__new(ctx:Ctx, post:Post) {
 						})
 					}, post.data.title),
 					div_({
-							style: style_({
-								display: 'flex',
-								'justify-content': 'space-between',
-								width: '100%',
-								'margin-bottom': '8px',
-								fontSize: 28,
-							})
-						},
+						style: style_({
+							display: 'flex',
+							'justify-content': 'space-between',
+							width: '100%',
+							'margin-bottom': '8px',
+							fontSize: 28,
+						})
+					}, [
 						span_(
 							'by ',
 							span_({
@@ -92,6 +92,10 @@ export function post__og_template__new(ctx:Ctx, post:Post) {
 								overflow: 'hidden',
 								'font-weight': 'bold',
 							}, site_(ctx)?.title)
-						})))))
+						})
+					])
+				])
+			])
+		])
 	) as ReactNode
 }

@@ -1,27 +1,29 @@
 {
-	"name": "@btakita/domain--server--blog",
-	"type": "module",
-	"module": "src/index.ts",
-	"types": "src/index.ts",
-	"dependencies": {
-		"@btakita/domain--any--blog": "workspace:*",
-		"@ctx-core/html": "^11.6.67",
-		"@resvg/resvg-js": "^2.6.0",
-		"astro": "^4.0.7",
-		"ctx-core": "^5.4.1",
-		"github-slugger": "^2.0.0",
-		"react": "^18.2.0",
-		"relementjs": "^0.31.11",
-		"rmemo": "^0.19.8",
-		"satori": "^0.10.11",
-		"satori-html": "^0.3.2",
-		"zod": "^3.22.4"
-	},
-	"devDependencies": {
-		"@types/react": "^18.2.45",
-		"bun-types": "latest"
-	},
-	"peerDependencies": {
-		"typescript": "^5.3.3"
-	}
+  "name": "@btakita/domain--server--blog",
+  "type": "module",
+  "version": "0.0.0",
+  "module": "src/index.ts",
+  "types": "src/index.ts",
+  "dependencies": {
+    "@btakita/domain--any--blog": "workspace:*",
+    "@ctx-core/html": "^11.6.67",
+    "@resvg/resvg-js": "^2.6.0",
+    "astro": "^4.0.7",
+    "ctx-core": "^5.4.1",
+    "github-slugger": "^2.0.0",
+    "react": "^18.2.0",
+    "relementjs": "^0.33.0",
+    "relysjs": "^0.25.7",
+    "rmemo": "^0.19.8",
+    "satori": "^0.10.11",
+    "satori-html": "^0.3.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.45",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.3.3"
+  }
 }
