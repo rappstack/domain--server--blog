@@ -1,5 +1,5 @@
 import { type nullish, nullish__check_ } from '@ctx-core/function'
-import { type Ctx } from '@ctx-core/object'
+import { type Ctx_wide_T } from 'ctx-core/be'
 import { be_sig_triple_ } from 'relementjs'
 import { load__bold_font_, type load__font_T, load__regular_font_ } from './font/index.js'
 export const [
@@ -23,7 +23,7 @@ export const [
 			_fonts$._ = nullish
 		}),
 	{ id: '_fonts' })
-async function _fonts__load(ctx:Ctx):Promise<_font_T> {
+async function _fonts__load(ctx:Ctx_wide_T<''>):Promise<_font_T> {
 	// Regular Font
 	const load__regular_font = load__regular_font_(ctx)!
 	const regular_font__response = await fetch(load__regular_font.url)
