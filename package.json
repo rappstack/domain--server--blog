@@ -13,14 +13,14 @@
     "github-slugger": "^2.0.0",
     "react": "^18.2.0",
     "relementjs": "^0.48.4",
-    "relysjs": "^0.43.4",
+    "relysjs": "^0.44.1",
     "rmemo": "^0.31.3",
     "satori": "^0.10.11",
     "satori-html": "^0.3.2",
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@types/react": "^18.2.47",
+    "@types/react": "^18.2.48",
     "bun-types": "latest"
   },
   "peerDependencies": {
