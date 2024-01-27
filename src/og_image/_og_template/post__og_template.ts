@@ -4,7 +4,7 @@ import { type ReactNode } from 'react'
 import { relement__use } from 'relementjs'
 import { div_, p_, span_ } from 'relementjs/html'
 import { server__relement } from 'relementjs/server'
-import { type route_ctx_T } from 'relysjs'
+import { type route_ctx_T } from 'relysjs/server'
 import { html } from 'satori-html'
 import { site_ } from '../../site/index.js'
 export function post__og_template__new(ctx:route_ctx_T, post:Post) {

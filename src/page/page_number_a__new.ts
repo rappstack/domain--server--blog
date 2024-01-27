@@ -1,4 +1,4 @@
-import { type route_ctx_T } from 'relysjs'
+import { type route_ctx_T } from 'relysjs/server'
 import { site__page__post_count_ } from '../site/index.js'
 export function page_number_a__new(ctx:route_ctx_T, numberOfPosts:number) {
 	const numberOfPages = numberOfPosts / Number(site__page__post_count_(ctx))

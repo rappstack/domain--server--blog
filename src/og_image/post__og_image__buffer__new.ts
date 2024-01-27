@@ -1,5 +1,5 @@
 import { type Post } from '@btakita/domain--any--blog'
-import { type route_ctx_T } from 'relysjs'
+import { type route_ctx_T } from 'relysjs/server'
 import satori from 'satori'
 import { post__og_template__new } from './_og_template/index.ts'
 import { _satori_options__load } from './_satori_options.js'
