@@ -1,4 +1,4 @@
-import { blog__ctx__new } from '@btakita/domain--any--blog'
+import { blog_ctx__new } from '@btakita/domain--any--blog'
 import { Astro__set } from '@btakita/domain--server'
 import { type APIContext, type AstroGlobal } from 'astro'
 import { relement__use } from 'relementjs'
@@ -14,7 +14,7 @@ export function blog_server__ctx__new(
 		socials:Social[]
 	}
 ) {
-	const ctx = blog__ctx__new()
+	const ctx = blog_ctx__new()
 	relement__use(server__relement)
 	Astro__set(ctx, Astro)
 	logo_image__set(ctx, logo_image)
