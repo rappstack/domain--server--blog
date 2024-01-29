@@ -1,23 +1,25 @@
 /// <reference types="ctx-core/be" />
-import { be_, type Ctx_wide_T } from 'ctx-core/be'
-import { be_sig_triple_ } from 'relementjs'
+import { type root_ctx_T } from '@btakita/domain--any--blog'
+import { be_ } from 'ctx-core/be'
+import { id_be_sig_triple_ } from 'rmemo'
 const uuid_M_footnote_ = be_(()=>
 	new Map<string, footnote_T>)
 export const [
 	footnote_o$_,
 	footnote_o_,
 	footnote_o__set,
-] = be_sig_triple_(()=>({
+] = id_be_sig_triple_(
+	'footnote_o',
+	()=>({
 		seq: 0,
 		footnote_a: []
-	} as footnote_o_T),
-	{ id: 'footnote_o' })
+	} as footnote_o_T))
 /**
- * @param {Ctx_wide_T}ctx
+ * @param {root_ctx_T}ctx
  * @param {string}id - handle Astrojs progressive rendering
  * @param {string}html
  */
-export function footnote__new(ctx:Ctx_wide_T<''>, id:string, html:string):footnote_T {
+export function footnote__new(ctx:root_ctx_T, id:string, html:string):footnote_T {
 	let footnote:footnote_T|null = null
 	let seq:number = footnote_o_(ctx).seq
 	const { footnote_a } = footnote_o_(ctx)

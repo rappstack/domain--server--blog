@@ -1,29 +1,29 @@
-import { type nullish, nullish__check_ } from '@ctx-core/function'
-import { type Ctx_wide_T } from 'ctx-core/be'
-import { be_sig_triple_ } from 'relementjs'
+import { type root_ctx_T } from '@btakita/domain--any--blog'
+import { type nullish, nullish__none_ } from 'ctx-core/function'
+import { id_be_sig_triple_ } from 'relementjs'
 import { load__bold_font_, type load__font_T, load__regular_font_ } from './font/index.js'
 export const [
 	_fonts$_,
 	_fonts_,
-] = be_sig_triple_<_font_T|nullish>(
-	()=>undefined,
-	(ctx, _fonts$)=>
-		nullish__check_([load__regular_font_(ctx), load__bold_font_(ctx)], async (
-			load__regular_font,
-			load__bold_font
-		)=>{
-			const fonts = await _fonts__load(ctx)
-			if (
-				load__regular_font === load__regular_font_(ctx)
-				&& load__bold_font === load__bold_font_(ctx)
-			) {
-				_fonts$._ = fonts
-			}
-		}, nullish=>{
-			_fonts$._ = nullish
-		}),
-	{ id: '_fonts' })
-async function _fonts__load(ctx:Ctx_wide_T<''>):Promise<_font_T> {
+] = id_be_sig_triple_<_font_T|nullish>(
+	'_fonts',
+	()=>undefined
+).add((ctx, _fonts$)=>
+	nullish__none_([load__regular_font_(ctx), load__bold_font_(ctx)], async (
+		load__regular_font,
+		load__bold_font
+	)=>{
+		const fonts = await _fonts__load(ctx)
+		if (
+			load__regular_font === load__regular_font_(ctx)
+			&& load__bold_font === load__bold_font_(ctx)
+		) {
+			_fonts$._ = fonts
+		}
+	}, nullish=>{
+		_fonts$._ = nullish
+	}))
+async function _fonts__load(ctx:root_ctx_T):Promise<_font_T> {
 	// Regular Font
 	const load__regular_font = load__regular_font_(ctx)!
 	const regular_font__response = await fetch(load__regular_font.url)
