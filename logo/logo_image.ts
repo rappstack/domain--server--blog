@@ -9,7 +9,7 @@ export const [
 export interface LogoImage {
 	enable:boolean
 	svg:boolean
-	src:string
+	src?:string
 	width:number
 	height:number
 }
