@@ -3,10 +3,10 @@ export const [
 	logo_image$_,
 	logo_image_,
 	logo_image__set,
-] = id_be_sig_triple_<LogoImage|undefined>(
+] = id_be_sig_triple_<logo_image_T|undefined>(
 	'logo_image',
 	()=>undefined)
-export interface LogoImage {
+export interface logo_image_T {
 	enable:boolean
 	svg:boolean
 	src?:string

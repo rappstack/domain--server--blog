@@ -1,4 +1,4 @@
-export type Site = {
+export type site_T = {
 	website:string
 	author:string
 	description:string

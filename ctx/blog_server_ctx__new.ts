@@ -1,20 +1,7 @@
 import { blog_ctx__new } from '@btakita/domain--any--blog'
-import { relement__use } from 'relementjs'
-import { server__relement } from 'relementjs/server'
-import { logo_image__set, type LogoImage } from '../logo/index.js'
-import { type Site, site__set } from '../site/index.js'
-import { type Social, socials__set } from '../social/index.js'
+import { blog_server_request__init, type blog_server_request__init_config_T } from './blog_server_request__init.ts'
 export function blog_server_ctx__new(
-	{ logo_image, site, socials }:{
-		logo_image?:LogoImage
-		site:Site
-		socials:Social[]
-	}
+	config:blog_server_request__init_config_T
 ) {
-	const ctx = blog_ctx__new()
-	relement__use(server__relement)
-	logo_image__set(ctx, logo_image)
-	site__set(ctx, site)
-	socials__set(ctx, socials)
-	return ctx
+	return blog_server_request__init(blog_ctx__new(), config)
 }

@@ -1,5 +1,5 @@
 import { type Post } from '@btakita/domain--any--blog'
-export function sorted__posts__new(posts:Post[]) {
+export function sorted_posts__new(posts:Post[]) {
 	return (
 		posts
 			.filter(({ data })=>!data.draft)
