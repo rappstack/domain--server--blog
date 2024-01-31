@@ -1,10 +1,10 @@
-import { type Post } from '@btakita/domain--any--blog'
-export function sorted_posts__new(posts:Post[]) {
+import { type dehydrated_post_meta_T } from '@btakita/domain--any--blog'
+export function sorted_posts__new(dehydrated_post_meta_a1:dehydrated_post_meta_T[]) {
 	return (
-		posts
-			.filter(({ data })=>!data.draft)
+		dehydrated_post_meta_a1
+			.filter(({ draft })=>!draft)
 			.sort(
 				(a, b)=>
-					Math.floor(new Date(b.data.pubDate).getTime() / 1000) -
-					Math.floor(new Date(a.data.pubDate).getTime() / 1000)))
+					Math.floor(new Date(b.pub_date).getTime() / 1000) -
+					Math.floor(new Date(a.pub_date).getTime() / 1000)))
 }
