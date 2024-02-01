@@ -5,7 +5,7 @@ import { div_, p_, span_ } from 'relementjs/html'
 import { server__relement } from 'relementjs/server'
 import { type request_ctx_T } from 'relysjs/server'
 import { html } from 'satori-html'
-import { site_ } from '../../site/index.js'
+import { site__description_, site__title_, site__website__url_ } from '../../site/index.js'
 export function site__og_template__new(ctx:request_ctx_T) {
 	relement__use(server__relement)
 	// language=html
@@ -75,12 +75,12 @@ export function site__og_template__new(ctx:request_ctx_T) {
 									'font-size': 72,
 									'font-weight': 'bold',
 								})
-							}, site_(ctx)?.title),
+							}, site__title_(ctx)),
 							p_({
 								style: style_({
 									'font-size': 28
 								})
-							}, site_(ctx)?.description)
+							}, site__description_(ctx))
 						]),
 						div_({
 							style: style_({
@@ -96,7 +96,7 @@ export function site__og_template__new(ctx:request_ctx_T) {
 									overflow: 'hidden',
 									'font-weight': 'bold',
 								})
-							}, site_(ctx)?.website && new URL(site_(ctx)!.website).hostname)
+							}, site__website__url_(ctx)?.hostname)
 						])
 					])
 				])
