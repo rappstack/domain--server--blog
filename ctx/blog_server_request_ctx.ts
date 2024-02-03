@@ -1,7 +1,5 @@
 import { post_mod_a1__set, type post_mod_T } from '@btakita/domain--any--blog'
 import { type middleware_ctx_T } from 'rebuildjs/server'
-import { relement__use } from 'relementjs'
-import { server__relement } from 'relementjs/server'
 import { request_ctx__ensure } from 'relysjs/server'
 import { logo_image__set, type logo_image_T } from '../logo/index.js'
 import { site__set, type site_T } from '../site/index.js'
@@ -20,7 +18,6 @@ export function blog_server_request_ctx__ensure(
 	}:blog_server_request_ctx__ensure_config_T
 ) {
 	const request_ctx = request_ctx__ensure(middleware_ctx, context)
-	relement__use(server__relement)
 	logo_image__set(request_ctx, logo_image)
 	site__set(request_ctx, site)
 	social_a1__set(request_ctx, social_a1)
