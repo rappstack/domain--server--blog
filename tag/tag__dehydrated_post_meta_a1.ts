@@ -1,7 +1,7 @@
 import { dehydrated_post_meta_a1_, type dehydrated_post_meta_T, str_a__slug_a__new } from '@btakita/domain--any--blog'
 import { nullish__none_, tup } from 'ctx-core/function'
 import { id_be_memo_pair_ } from 'rmemo'
-import { tag_ } from './tag.ts'
+import { tag_ } from './tag.js'
 export const [
 	tag__dehydrated_post_meta_a1$_,
 	tag__dehydrated_post_meta_a1_,

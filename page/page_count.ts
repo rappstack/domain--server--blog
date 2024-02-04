@@ -1,6 +1,6 @@
 import { nullish__none_ } from 'ctx-core/function'
 import { id_be_memo_pair_ } from 'rmemo'
-import { page_num_a1_ } from './page_num_a1.ts'
+import { page_num_a1_ } from './page_num_a1.js'
 export const [
 	page_count$_,
 	page_count_,
