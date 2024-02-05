@@ -2,14 +2,22 @@
   "name": "@btakita/domain--server--blog",
   "type": "module",
   "version": "0.0.0",
-  "module": "src/index.ts",
-  "types": "src/index.ts",
+  "types": "index.ts",
   "exports": {
-    ".": "./index.ts"
+    ".": "./index.ts",
+    "./ctx": "./ctx/index.ts",
+    "./footnote": "./footnote/index.ts",
+    "./logo": "./logo/index.ts",
+    "./og_image": "./og_image/index.ts",
+    "./page": "./page/index.ts",
+    "./post": "./post/index.ts",
+    "./site": "./site/index.ts",
+    "./social": "./social/index.ts",
+    "./tag": "./tag/index.ts",
+    "./package.json": "./package.json"
   },
   "dependencies": {
     "@btakita/domain--any--blog": "workspace:*",
-    "@ctx-core/html": "^11.8.6",
     "ctx-core": "^5.38.0",
     "github-slugger": "^2.0.0",
     "react": "^18.2.0",

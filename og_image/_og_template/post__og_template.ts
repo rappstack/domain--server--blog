@@ -1,5 +1,5 @@
 import { type Post } from '@btakita/domain--any--blog'
-import { style_ } from '@ctx-core/html'
+import { style_ } from 'ctx-core/html'
 import { type ReactNode } from 'react'
 import { relement__use } from 'relementjs'
 import { div_, p_, span_ } from 'relementjs/html'
