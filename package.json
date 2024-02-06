@@ -38,7 +38,6 @@
 	"dependencies": {
 		"@rappstack/domain--server--blog": "workspace:*",
 		"ctx-core": "^5.38.1",
-		"github-slugger": "^2.0.0",
 		"react": "^18.2.0",
 		"relementjs": "^0.64.2",
 		"relysjs": "^1.6.4",
