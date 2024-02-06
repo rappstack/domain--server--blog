@@ -1,8 +1,27 @@
 {
-  "name": "@btakita/domain--server--blog",
+  "name": "@rappstack/domain--server--blog",
   "type": "module",
   "version": "0.0.0",
   "types": "index.ts",
+  "description": "domain library targeting the server for blogs",
+  "keywords": [
+    "rappstack",
+    "reactive",
+    "full-stack",
+    "domain",
+    "server",
+    "blog"
+  ],
+  "homepage": "https://github.com/rappstack/domain--server--blog",
+  "bugs": {
+    "url": "https://github.com/rappstack/domain--server--blog/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rappstack/domain--server--blog.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Brian Takita",
   "exports": {
     ".": "./index.ts",
     "./ctx": "./ctx/index.ts",
@@ -17,7 +36,7 @@
     "./package.json": "./package.json"
   },
   "dependencies": {
-    "@btakita/domain--any--blog": "workspace:*",
+    "@rappstack/domain--server--blog": "workspace:*",
     "ctx-core": "^5.38.1",
     "github-slugger": "^2.0.0",
     "react": "^18.2.0",
