@@ -1,57 +1,57 @@
 {
-  "name": "@rappstack/domain--server--blog",
-  "type": "module",
-  "version": "0.0.0",
-  "types": "index.ts",
-  "description": "domain library targeting the server for blogs",
-  "keywords": [
-    "rappstack",
-    "reactive",
-    "full-stack",
-    "domain",
-    "server",
-    "blog"
-  ],
-  "homepage": "https://github.com/rappstack/domain--server--blog",
-  "bugs": {
-    "url": "https://github.com/rappstack/domain--server--blog/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rappstack/domain--server--blog.git"
-  },
-  "license": "Apache-2.0",
-  "author": "Brian Takita",
-  "exports": {
-    ".": "./index.ts",
-    "./ctx": "./ctx/index.ts",
-    "./footnote": "./footnote/index.ts",
-    "./logo": "./logo/index.ts",
-    "./og_image": "./og_image/index.ts",
-    "./page": "./page/index.ts",
-    "./post": "./post/index.ts",
-    "./site": "./site/index.ts",
-    "./social": "./social/index.ts",
-    "./tag": "./tag/index.ts",
-    "./package.json": "./package.json"
-  },
-  "dependencies": {
-    "@rappstack/domain--server--blog": "workspace:*",
-    "ctx-core": "^5.38.1",
-    "github-slugger": "^2.0.0",
-    "react": "^18.2.0",
-    "relementjs": "^0.64.2",
-    "relysjs": "^1.6.3",
-    "rmemo": "^0.42.1",
-    "satori": "^0.10.13",
-    "satori-html": "^0.3.2",
-    "zod": "^3.22.4"
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.55",
-    "bun-types": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.3.3"
-  }
+	"name": "@rappstack/domain--server--blog",
+	"type": "module",
+	"version": "0.0.0",
+	"types": "index.ts",
+	"description": "domain library targeting the server for blogs",
+	"keywords": [
+		"rappstack",
+		"reactive",
+		"full-stack",
+		"domain",
+		"server",
+		"blog"
+	],
+	"homepage": "https://github.com/rappstack/domain--server--blog",
+	"bugs": {
+		"url": "https://github.com/rappstack/domain--server--blog/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rappstack/domain--server--blog.git"
+	},
+	"license": "Apache-2.0",
+	"author": "Brian Takita",
+	"exports": {
+		".": "./index.ts",
+		"./ctx": "./ctx/index.ts",
+		"./footnote": "./footnote/index.ts",
+		"./logo": "./logo/index.ts",
+		"./og_image": "./og_image/index.ts",
+		"./page": "./page/index.ts",
+		"./post": "./post/index.ts",
+		"./site": "./site/index.ts",
+		"./social": "./social/index.ts",
+		"./tag": "./tag/index.ts",
+		"./package.json": "./package.json"
+	},
+	"dependencies": {
+		"@rappstack/domain--server--blog": "workspace:*",
+		"ctx-core": "^5.38.1",
+		"github-slugger": "^2.0.0",
+		"react": "^18.2.0",
+		"relementjs": "^0.64.2",
+		"relysjs": "^1.6.4",
+		"rmemo": "^0.42.1",
+		"satori": "^0.10.13",
+		"satori-html": "^0.3.2",
+		"zod": "^3.22.4"
+	},
+	"devDependencies": {
+		"@types/react": "^18.2.55",
+		"bun-types": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.3.3"
+	}
 }
