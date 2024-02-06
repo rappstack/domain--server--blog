@@ -1,4 +1,4 @@
-import { type root_ctx_T } from '@btakita/domain--any--blog'
+import { type root_ctx_T } from '@rappstack/domain--any--blog'
 import { type nullish, nullish__none_ } from 'ctx-core/function'
 import { id_be_sig_triple_ } from 'relementjs'
 import { load__bold_font_, type load__font_T, load__regular_font_ } from './font/index.js'

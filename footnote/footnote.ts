@@ -1,5 +1,5 @@
 /// <reference types="ctx-core/be" />
-import { type root_ctx_T } from '@btakita/domain--any--blog'
+import { type root_ctx_T } from '@rappstack/domain--any--blog'
 import { be_ } from 'ctx-core/be'
 import { id_be_sig_triple_ } from 'rmemo'
 const uuid_M_footnote_ = be_(()=>

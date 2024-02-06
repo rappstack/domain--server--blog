@@ -1,4 +1,4 @@
-import { sorted_dehydrated_post_meta_a1_ } from '@btakita/domain--any--blog'
+import { sorted_dehydrated_post_meta_a1_ } from '@rappstack/domain--any--blog'
 import { nullish__none_, tup } from 'ctx-core/function'
 import { id_be_memo_pair_ } from 'rmemo'
 import { site__page__post_count_ } from '../site/index.js'

@@ -1,4 +1,4 @@
-import { type Post } from '@btakita/domain--any--blog'
+import { type Post } from '@rappstack/domain--any--blog'
 import { type request_ctx_T } from 'relysjs/server'
 import satori from 'satori'
 import { post__og_template__new } from './_og_template/index.js'
