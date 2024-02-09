@@ -1,4 +1,4 @@
-import { type Post } from '@rappstack/domain--any--blog'
+import { type Post } from '@rappstack/domain--any--blog/post'
 import { style_ } from 'ctx-core/html'
 import { type ReactNode } from 'react'
 import { relement__use } from 'relementjs'

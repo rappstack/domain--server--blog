@@ -24,6 +24,15 @@
 	"types": "index.ts",
 	"exports": {
 		".": "./index.ts",
+		"./ctx": "./ctx/index.ts",
+		"./footnote": "./footnote/index.ts",
+		"./logo": "./logo/index.ts",
+		"./og_image": "./og_image/index.ts",
+		"./page": "./page/index.ts",
+		"./post": "./post/index.ts",
+		"./site": "./site/index.ts",
+		"./social": "./social/index.ts",
+		"./tag": "./tag/index.ts",
 		"./package.json": "./package.json"
 	},
 	"files": [

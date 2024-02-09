@@ -1,4 +1,4 @@
-import { post_mod_a1__set, type post_mod_T } from '@rappstack/domain--any--blog'
+import { post_mod_a1__set, type post_mod_T } from '@rappstack/domain--any--blog/post'
 import { type middleware_ctx_T } from 'rebuildjs/server'
 import { request_ctx__ensure } from 'relysjs/server'
 import { logo_image__set, type logo_image_T } from '../logo/index.js'

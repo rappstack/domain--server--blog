@@ -1,4 +1,4 @@
-import { post_mod_a1_ } from '@rappstack/domain--any--blog'
+import { post_mod_a1_ } from '@rappstack/domain--any--blog/post'
 import { nullish__none_, tup } from 'ctx-core/function'
 import { type request_ctx_T } from 'relysjs/server'
 import { id_be_memo_pair_ } from 'rmemo'

@@ -1,4 +1,4 @@
-import { type Post } from '@rappstack/domain--any--blog'
+import { type Post } from '@rappstack/domain--any--blog/post'
 import { z, type ZodType } from 'zod'
 export const Post__schema = z.object({
 	author: z.string(),

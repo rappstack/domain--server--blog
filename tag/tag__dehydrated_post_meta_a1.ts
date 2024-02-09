@@ -1,4 +1,5 @@
-import { dehydrated_post_meta_a1_, type dehydrated_post_meta_T, str_a__slug_a__new } from '@rappstack/domain--any--blog'
+import { dehydrated_post_meta_a1_, type dehydrated_post_meta_T } from '@rappstack/domain--any--blog/post'
+import { str_a__slug_a__new } from '@rappstack/domain--any--blog/slug'
 import { nullish__none_, tup } from 'ctx-core/function'
 import { id_be_memo_pair_ } from 'rmemo'
 import { tag_ } from './tag.js'
