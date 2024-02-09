@@ -41,11 +41,11 @@
 		"tag"
 	],
 	"dependencies": {
-		"ctx-core": "^5.38.1",
+		"ctx-core": "^6.1.0",
 		"react": "^18.2.0",
-		"relementjs": "^0.64.2",
-		"relysjs": "^1.7.1",
-		"rmemo": "^0.42.1",
+		"relementjs": "^0.66.0",
+		"relysjs": "^1.11.0",
+		"rmemo": "^0.44.0",
 		"satori": "^0.10.13",
 		"satori-html": "^0.3.2",
 		"zod": "^3.22.4"
