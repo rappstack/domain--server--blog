@@ -52,7 +52,7 @@
 	"dependencies": {
 		"ctx-core": "^6.2.1",
 		"react": "^18.2.0",
-		"relementjs": "^0.72.1",
+		"relementjs": "^0.72.2",
 		"relysjs": "^1.12.1",
 		"rmemo": "^0.45.1",
 		"satori": "^0.10.13",
