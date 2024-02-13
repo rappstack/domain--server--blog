@@ -24,6 +24,7 @@ export const [
 	'blog_post_mod__meta',
 	(ctx:request_ctx_T)=>
 		blog_post_mod_(ctx)?.meta_(ctx))
+/** @see {import('@rappstack/ui--server--blog/post').blog_post__html$_} */
 export const [
 	blog_post__tag$_,
 	blog_post__tag_,
@@ -31,13 +32,6 @@ export const [
 	'blog_post__tag',
 	(ctx:request_ctx_T)=>
 		blog_post_mod_(ctx)?.default)
-export function blog_post__render(ctx:request_ctx_T) {
-	return (
-		blog_post__tag_(ctx)
-			? blog_post__tag_(ctx)!(ctx)
-			: null
-	)
-}
 export const [
 	blog_post__canonical_url$_,
 	blog_post__canonical_url_,
