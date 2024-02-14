@@ -12,5 +12,6 @@ export const [
 			? 1
 			: (
 				isNumber(blog_post_slug_or_page_num_(ctx))
-				&& page_num_a1_(ctx)?.includes?.(Number(blog_post_slug_or_page_num_(ctx)))
-			) ? Number(blog_post_slug_or_page_num_(ctx)) : 0)
+				&& page_num_a1_(ctx)?.includes?.(Number(blog_post_slug_or_page_num_(ctx))))
+				? Number(blog_post_slug_or_page_num_(ctx))
+				: 0)
