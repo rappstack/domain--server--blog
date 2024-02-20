@@ -46,7 +46,6 @@
 		"page",
 		"post",
 		"site",
-		"social",
 		"tag"
 	],
 	"dependencies": {
