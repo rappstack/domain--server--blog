@@ -21,5 +21,4 @@ export const [
 			const end_post_num = page_num * site__page__post_count
 			const begin_post_num = end_post_num - site__page__post_count
 			return sorted_dehydrated_post_meta_a1.slice(begin_post_num, end_post_num)
-		})
-)
+		}))

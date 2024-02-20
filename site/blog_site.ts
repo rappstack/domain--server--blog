@@ -15,13 +15,13 @@ export const [
 	site__page__post_count_,
 ] = id_be_memo_pair_(
 	'site__page__post_count',
-	()=><number|undefined>undefined)
+	ctx=>blog_site_(ctx)?.page__post_count)
 export const [
 	,
 	site__home__post_count_,
 ] = id_be_memo_pair_(
 	'site__home__post_count',
-	()=><number|undefined>undefined)
+	ctx=>blog_site_(ctx)?.home__post_count)
 export type blog_site_T = site_T&{
 	page__post_count:number
 	home__post_count:number
