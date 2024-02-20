@@ -50,6 +50,7 @@
 		"tag"
 	],
 	"dependencies": {
+		"@rappstack/domain--server": "workspace:*",
 		"ctx-core": "^6.4.3",
 		"react": "^18.2.0",
 		"relementjs": "^0.73.3",

@@ -5,7 +5,7 @@ import { div_, p_, span_ } from 'relementjs/html'
 import { server__relement } from 'relementjs/server'
 import { type request_ctx_T } from 'relysjs/server'
 import { html } from 'satori-html'
-import { site__description_, site__title_, site__website__url_ } from '../../site/index.js'
+import { site__description_, site__title_, site__website__url_ } from '@rappstack/domain--server/site'
 export function site__og_template__new(ctx:request_ctx_T) {
 	relement__use(server__relement)
 	// language=html
