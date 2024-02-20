@@ -4,7 +4,7 @@ import { type middleware_ctx_T } from 'rebuildjs/server'
 import { request_ctx__ensure } from 'relysjs/server'
 import { logo_image__set, type logo_image_T } from '../logo/index.js'
 import { blog_site__set, type blog_site_T } from '../site/index.js'
-export function blog_server_request_ctx__ensure(
+export function blog_request_ctx__ensure(
 	middleware_ctx:middleware_ctx_T,
 	context:{
 		request:Request
