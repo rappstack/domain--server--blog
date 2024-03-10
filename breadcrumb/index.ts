@@ -1,7 +1,8 @@
 import type { BreadcrumbList } from '@btakita/schema-dts'
 import { id_be_id_ref_jsonld_pair_ } from '@rappstack/domain--server/jsonld'
+import { request_url__pathname_ } from '@rappstack/domain--server/request'
 import { site__title_, site__website_ } from '@rappstack/domain--server/site'
-import { request_url__origin_ } from '@rappstack/ui--server/request'
+import { nullish__none_, tup } from 'ctx-core/function'
 import { isNumber_ } from 'ctx-core/number'
 import { url__join } from 'ctx-core/uri'
 import { id_be_memo_pair_, type request_ctx_T, request_url_ } from 'relysjs/server'
@@ -22,26 +23,29 @@ export const [
 })
 export const [
 	BreadcrumbList_id_ref_,
-	BreadcrumbList_
-] = id_be_id_ref_jsonld_pair_('jsonld_BreadcrumbList', ctx=><BreadcrumbList>{
-	'@context': 'https://schema.org',
-	'@type': 'BreadcrumbList',
-	'@id': url__join(site__website_(ctx)!, request_url_(ctx).pathname, '#BreadcrumbList'),
-	name: 'BreadcrumbList | ' + site__title_(ctx),
-	itemListElement: [
-		{
-			'@type': 'ListItem',
-			'@id': url__join(request_url__origin_(ctx), '#BreadcrumbList_home'),
-			position: 1,
-			name: 'Home',
-			item: request_url__origin_(ctx)
-		},
-		...breadcrumb_a1_(ctx).map((breadcrumb, idx)=>({
-			'@type': 'ListItem',
-			'@id': url__join(request_url__origin_(ctx), `#BreadcrumbList_${breadcrumb.replaceAll('/', '_')}`),
-			position: idx + 2,
-			name: breadcrumb,
-			item: url__join(request_url__origin_(ctx), breadcrumb)
-		}))
-	]
+] = id_be_id_ref_jsonld_pair_('jsonld_BreadcrumbList', ctx=>{
+	return nullish__none_(tup(site__website_(ctx)), (
+		site__website
+	)=><BreadcrumbList>{
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		'@id': url__join(site__website, request_url__pathname_(ctx), '#BreadcrumbList'),
+		name: 'BreadcrumbList | ' + site__title_(ctx),
+		itemListElement: [
+			{
+				'@type': 'ListItem',
+				'@id': url__join(site__website, '#BreadcrumbList_home'),
+				position: 1,
+				name: 'Home',
+				item: site__website
+			},
+			...breadcrumb_a1_(ctx).map((breadcrumb, idx)=>({
+				'@type': 'ListItem',
+				'@id': url__join(site__website, `#BreadcrumbList_${breadcrumb.replaceAll('/', '_')}`),
+				position: idx + 2,
+				name: breadcrumb,
+				item: url__join(site__website, breadcrumb)
+			}))
+		]
+	})
 })
