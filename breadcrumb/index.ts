@@ -37,7 +37,7 @@ export const [
 				'@id': url__join(site__website, '#BreadcrumbList_home'),
 				position: 1,
 				name: 'Home',
-				item: site__website
+				item: site__website,
 			},
 			...breadcrumb_a1_(ctx).map((breadcrumb, idx)=>({
 				'@type': 'ListItem',
