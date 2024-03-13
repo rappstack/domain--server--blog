@@ -5,14 +5,12 @@ import { site__title_, site__website_ } from '@rappstack/domain--server/site'
 import { nullish__none_, tup } from 'ctx-core/function'
 import { isNumber_ } from 'ctx-core/number'
 import { url__join } from 'ctx-core/uri'
-import { id_be_memo_pair_, type request_ctx_T, request_url_ } from 'relysjs/server'
+import { id_be_memo_pair_, type request_ctx_T } from 'relysjs/server'
 export const [
 	,
 	breadcrumb_a1_
 ] = id_be_memo_pair_('breadcrumb_a1', (ctx:request_ctx_T)=>{
-	const current_url_path:string = request_url_(ctx)
-		.pathname
-		.replace(/\/+$/, '')
+	const current_url_path:string = request_url__pathname_(ctx).replace(/\/+$/, '')
 	// Get url array from path
 	// eg: /tags/tailwindcss => ['tags', 'tailwindcss']
 	const breadcrumb_a1 = current_url_path.split('/').slice(1)
