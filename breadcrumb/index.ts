@@ -1,4 +1,4 @@
-import type { BreadcrumbList } from '@btakita/schema-dts'
+import type { BreadcrumbList } from 'schema-dts'
 import { id_be_id_ref_jsonld_pair_ } from '@rappstack/domain--server/jsonld'
 import { request_url__pathname_ } from '@rappstack/domain--server/request'
 import { site__title_, site__website_ } from '@rappstack/domain--server/site'
