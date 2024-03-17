@@ -1,12 +1,11 @@
-import { schema_org_id_ } from '@rappstack/domain--server/rdfa'
-import type { BreadcrumbList } from 'schema-dts'
-import { id_be_id_ref_jsonld_pair_ } from '@rappstack/domain--server/jsonld'
+import { id_be_id_ref_jsonld_pair_, jsonld_id__new } from '@rappstack/domain--server/jsonld'
 import { request_url__pathname_ } from '@rappstack/domain--server/request'
 import { site__title_, site__website_ } from '@rappstack/domain--server/site'
 import { nullish__none_, tup } from 'ctx-core/function'
 import { isNumber_ } from 'ctx-core/number'
 import { url__join } from 'ctx-core/uri'
 import { id_be_memo_pair_, type request_ctx_T } from 'relysjs/server'
+import type { BreadcrumbList } from 'schema-dts'
 export const [
 	,
 	breadcrumb_a1_
@@ -28,19 +27,19 @@ export const [
 	)=><BreadcrumbList>{
 		'@context': 'https://schema.org',
 		'@type': 'BreadcrumbList',
-		'@id': schema_org_id_(ctx, '#BreadcrumbList'),
+		'@id': jsonld_id__new(ctx, '#BreadcrumbList'),
 		name: 'BreadcrumbList | ' + site__title_(ctx),
 		itemListElement: [
 			{
 				'@type': 'ListItem',
-				'@id': schema_org_id_(site__website, '#BreadcrumbList_home'),
+				'@id': jsonld_id__new(site__website, '#BreadcrumbList_home'),
 				position: 1,
 				name: 'Home',
 				item: site__website,
 			},
 			...breadcrumb_a1_(ctx).map((breadcrumb, idx)=>({
 				'@type': 'ListItem',
-				'@id': schema_org_id_(site__website, `#BreadcrumbList_${breadcrumb.replaceAll('/', '_')}`),
+				'@id': jsonld_id__new(site__website, `#BreadcrumbList_${breadcrumb.replaceAll('/', '_')}`),
 				position: idx + 2,
 				name: breadcrumb,
 				item: url__join(site__website, breadcrumb)
