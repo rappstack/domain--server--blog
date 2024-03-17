@@ -1,3 +1,4 @@
+import { schema_org_id_ } from '@rappstack/domain--server/rdfa'
 import type { BreadcrumbList } from 'schema-dts'
 import { id_be_id_ref_jsonld_pair_ } from '@rappstack/domain--server/jsonld'
 import { request_url__pathname_ } from '@rappstack/domain--server/request'
@@ -27,19 +28,19 @@ export const [
 	)=><BreadcrumbList>{
 		'@context': 'https://schema.org',
 		'@type': 'BreadcrumbList',
-		'@id': url__join(site__website, request_url__pathname_(ctx), '#BreadcrumbList'),
+		'@id': schema_org_id_(ctx, '#BreadcrumbList'),
 		name: 'BreadcrumbList | ' + site__title_(ctx),
 		itemListElement: [
 			{
 				'@type': 'ListItem',
-				'@id': url__join(site__website, '#BreadcrumbList_home'),
+				'@id': schema_org_id_(site__website, '#BreadcrumbList_home'),
 				position: 1,
 				name: 'Home',
 				item: site__website,
 			},
 			...breadcrumb_a1_(ctx).map((breadcrumb, idx)=>({
 				'@type': 'ListItem',
-				'@id': url__join(site__website, `#BreadcrumbList_${breadcrumb.replaceAll('/', '_')}`),
+				'@id': schema_org_id_(site__website, `#BreadcrumbList_${breadcrumb.replaceAll('/', '_')}`),
 				position: idx + 2,
 				name: breadcrumb,
 				item: url__join(site__website, breadcrumb)
