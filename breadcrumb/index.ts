@@ -5,11 +5,13 @@ import { nullish__none_, tup } from 'ctx-core/function'
 import { isNumber_ } from 'ctx-core/number'
 import { url__join } from 'ctx-core/uri'
 import { id_be_memo_pair_, type request_ctx_T } from 'relysjs/server'
+import { id_be_sig_triple_ } from 'rmemo'
 import type { BreadcrumbList } from 'schema-dts'
 export const [
 	,
-	breadcrumb_a1_
-] = id_be_memo_pair_('breadcrumb_a1', (ctx:request_ctx_T)=>{
+	breadcrumb_a1_,
+	breadcrumb_a1__set,
+] = id_be_sig_triple_('breadcrumb_a1', (ctx:request_ctx_T)=>{
 	const current_url_path:string = request_url__pathname_(ctx).replace(/\/+$/, '')
 	// Get url array from path
 	// eg: /tags/tailwindcss => ['tags', 'tailwindcss']
@@ -19,6 +21,9 @@ export const [
 	}
 	return breadcrumb_a1
 })
+export function breadcrumb__set(ctx:request_ctx_T, breadcrumb:string) {
+  breadcrumb_a1__set(ctx, [...breadcrumb_a1_(ctx).slice(0, -1), breadcrumb])
+}
 export const [
 	BreadcrumbList_id_ref_,
 ] = id_be_id_ref_jsonld_pair_('jsonld_BreadcrumbList', ctx=>{
