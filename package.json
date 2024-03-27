@@ -60,7 +60,7 @@
 		"zod": "^3.22.4"
 	},
 	"devDependencies": {
-		"@types/react": "^18.2.70",
+		"@types/react": "^18.2.72",
 		"bun-types": "latest"
 	},
 	"peerDependencies": {
