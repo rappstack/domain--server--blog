@@ -7,22 +7,24 @@ export const [
 	_fonts_,
 ] = id_be_sig_triple_<_font_T|nullish>(
 	'_fonts',
-	()=>undefined
-).add((ctx, _fonts$)=>
-	nullish__none_([load__regular_font_(ctx), load__bold_font_(ctx)], async (
-		load__regular_font,
-		load__bold_font
-	)=>{
-		const fonts = await _fonts__load(ctx)
-		if (
-			load__regular_font === load__regular_font_(ctx)
-			&& load__bold_font === load__bold_font_(ctx)
-		) {
-			_fonts$._ = fonts
-		}
-	}, nullish=>{
-		_fonts$._ = nullish
-	}))
+	()=>undefined,
+	[
+		(ctx, _fonts$)=>
+			nullish__none_([load__regular_font_(ctx), load__bold_font_(ctx)], async (
+				load__regular_font,
+				load__bold_font
+			)=>{
+				const fonts = await _fonts__load(ctx)
+				if (
+					load__regular_font === load__regular_font_(ctx)
+					&& load__bold_font === load__bold_font_(ctx)
+				) {
+					_fonts$.set(fonts)
+				}
+			}, nullish=>{
+				_fonts$.set(nullish)
+			})
+	])
 async function _fonts__load(ctx:wide_ctx_T):Promise<_font_T> {
 	// Regular Font
 	const load__regular_font = load__regular_font_(ctx)!

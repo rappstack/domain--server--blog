@@ -8,9 +8,11 @@ export const [
 	blog_site__set
 ] = id_be_sig_triple_(
 	'blog_site',
-	()=><blog_site_T|undefined>undefined
-).add((ctx, blog_site$)=>
-	memo_(()=>site__set(ctx, blog_site$())))
+	()=><blog_site_T|undefined>undefined,
+	[
+		(ctx, blog_site$)=>
+			memo_(()=>site__set(ctx, blog_site$()))
+	])
 export const [
 	,
 	site__page__post_count_,
