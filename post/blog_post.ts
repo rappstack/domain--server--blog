@@ -76,6 +76,13 @@ export const [
 		blog_post_mod__meta_(ctx)?.title)
 export const [
 	,
+	blog_post__subtitle_,
+] = id_be_memo_pair_(
+	'blog_post__subtitle',
+	(ctx:request_ctx_T)=>
+		blog_post_mod__meta_(ctx)?.subtitle)
+export const [
+	,
 	blog_post__description_,
 ] = id_be_memo_pair_(
 	'blog_post__description',
