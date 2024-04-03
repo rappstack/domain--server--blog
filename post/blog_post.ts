@@ -62,11 +62,11 @@ export const [
 		blog_post_mod__meta_(ctx)?.tag_a1)
 export const [
 	,
-	blog_post__author_,
+	blog_post__author_a1_,
 ] = id_be_memo_pair_(
-	'blog_post__author',
+	'blog_post__author_a1',
 	(ctx:request_ctx_T)=>
-		blog_post_mod__meta_(ctx)?.author)
+		blog_post_mod__meta_(ctx)?.author_a1)
 export const [
 	,
 	blog_post__title_,
