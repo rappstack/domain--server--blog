@@ -50,11 +50,11 @@
 	],
 	"dependencies": {
 		"@rappstack/domain--server": "workspace:*",
-		"ctx-core": "^7.1.1",
+		"ctx-core": "^7.1.2",
 		"react": "^18.2.0",
-		"relementjs": "^0.79.1",
-		"relysjs": "^1.20.3",
-		"rmemo": "^0.50.2",
+		"relementjs": "^0.79.2",
+		"relysjs": "^1.20.5",
+		"rmemo": "^0.50.3",
 		"satori": "^0.10.13",
 		"satori-html": "^0.3.2",
 		"zod": "^3.22.4"
@@ -64,6 +64,6 @@
 		"bun-types": "latest"
 	},
 	"peerDependencies": {
-		"typescript": "^5.4.3"
+		"typescript": "^5.4.4"
 	}
 }
