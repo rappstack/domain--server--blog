@@ -38,4 +38,5 @@ export type in_dehydrated_post_meta_T = {
 	featured?:boolean
 	draft?:boolean
 	canonical_url?:string
+	is_pillar?:boolean
 }
