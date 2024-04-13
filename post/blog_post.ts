@@ -88,3 +88,10 @@ export const [
 	'blog_post__description',
 	(ctx:request_ctx_T)=>
 		blog_post_mod__meta_(ctx)?.description)
+export const [
+	,
+	blog_post__description_md_,
+] = id_be_memo_pair_(
+	'blog_post__description_md',
+	(ctx:request_ctx_T)=>
+		blog_post_mod__meta_(ctx)?.description_md)
