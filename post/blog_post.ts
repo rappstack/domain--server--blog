@@ -90,8 +90,8 @@ export const [
 		blog_post_mod__meta_(ctx)?.description)
 export const [
 	,
-	blog_post__description_md_,
+	blog_post__description_html_,
 ] = id_be_memo_pair_(
-	'blog_post__description_md',
+	'blog_post__description_html',
 	(ctx:request_ctx_T)=>
-		blog_post_mod__meta_(ctx)?.description_md)
+		blog_post_mod__meta_(ctx)?.description_html)

@@ -1,14 +1,17 @@
 import { type dehydrated_post_meta_T } from '@rappstack/domain--any--blog/post'
 import { type author_T, site__author_a1_ } from '@rappstack/domain--server/site'
+import { md__raw_ } from '@rappstack/ui--any/md'
 import type { request_ctx_T } from 'rebuildjs/server'
 export function post_meta__validate(
 	ctx:request_ctx_T,
-	dehydrated_post_meta:in_dehydrated_post_meta_T,
+	in_dehydrated_post_meta:in_dehydrated_post_meta_T,
 ):dehydrated_post_meta_T {
 	const {
 		pub_date,
 		updated_date,
-	} = dehydrated_post_meta
+		description_md,
+		...rest_dehydrated_post_meta
+	} = in_dehydrated_post_meta
 	if (isNaN(new Date(pub_date) as never)) {
 		throw Error('invalid pub_date ' + pub_date)
 	}
@@ -20,8 +23,14 @@ export function post_meta__validate(
 	}
 	return {
 		author_a1: site__author_a1_(ctx)!,
-		...dehydrated_post_meta,
-		tag_a1: dehydrated_post_meta.tag_a1 ?? ['other']
+		pub_date,
+		updated_date,
+		...rest_dehydrated_post_meta,
+		...(
+			description_md
+				? { description_html: '' + md__raw_<'server'>(description_md) }
+				: {}),
+		tag_a1: in_dehydrated_post_meta.tag_a1 ?? ['other']
 	}
 }
 export type in_dehydrated_post_meta_T = {
