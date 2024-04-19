@@ -4,7 +4,7 @@ import { id_be_sig_triple_ } from 'rmemo'
 const uuid_M_footnote_ = be_(()=>
 	new Map<string, footnote_T>)
 export const [
-	footnote_o$_,
+	,
 	footnote_o_,
 	footnote_o__set,
 ] = id_be_sig_triple_(
@@ -18,7 +18,7 @@ export const [
  * @param {string}id - handle Astrojs progressive rendering
  * @param {string}html
  */
-export function footnote__new(ctx:wide_ctx_T, id:string, html:string):footnote_T {
+export function footnote__ensure(ctx:wide_ctx_T, id:string, html:string):footnote_T {
 	let footnote:footnote_T|null = null
 	let seq:number = footnote_o_(ctx).seq
 	const { footnote_a } = footnote_o_(ctx)
