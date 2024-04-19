@@ -57,7 +57,7 @@
 		"rmemo": "^0.50.6",
 		"satori": "^0.10.13",
 		"satori-html": "^0.3.2",
-		"zod": "^3.22.4"
+		"zod": "^3.22.5"
 	},
 	"devDependencies": {
 		"@types/react": "^18.2.79",
