@@ -1,7 +1,7 @@
 import { type dehydrated_post_meta_T } from '@rappstack/domain--any--blog/post'
 import { type author_T, site__author_a1_ } from '@rappstack/domain--server/site'
 import { md__raw_ } from '@rappstack/ui--any/md'
-import type { request_ctx_T } from 'rebuildjs/server'
+import { type request_ctx_T } from 'rebuildjs/server'
 export function post_meta__validate(
 	ctx:request_ctx_T,
 	in_dehydrated_post_meta:in_dehydrated_post_meta_T,
