@@ -8,9 +8,7 @@ export function blog_request_ctx__ensure(
 		request:Request
 		store:{ [x:string]:unknown }
 	},
-	{
-		blog_site,
-	}:blog_request_ctx__ensure_config_T
+	{ blog_site }:blog_request_ctx__ensure_config_T
 ) {
 	const request_ctx = request_ctx__ensure(middleware_ctx, context)
 	blog_site__set(request_ctx, blog_site)
