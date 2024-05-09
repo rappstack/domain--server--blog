@@ -28,7 +28,7 @@ export function post_meta__validate(
 		...rest_dehydrated_post_meta,
 		...(
 			description_md
-				? { description_html: '' + md__raw_<'server'>(ctx, description_md) }
+				? { description_html: '' + md__raw_<'server'>({ ctx }, description_md) }
 				: {}),
 		tag_a1: in_dehydrated_post_meta.tag_a1 ?? ['other']
 	}
