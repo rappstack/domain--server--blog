@@ -53,14 +53,14 @@
 		"ctx-core": "^7.2.7",
 		"react": "^18.3.1",
 		"relementjs": "^0.80.7",
-		"relysjs": "^1.21.25",
+		"relysjs": "^1.21.27",
 		"rmemo": "^0.51.7",
 		"satori": "^0.10.13",
 		"satori-html": "^0.3.2",
 		"zod": "^3.23.8"
 	},
 	"devDependencies": {
-		"@types/react": "^18.3.1",
+		"@types/react": "^18.3.2",
 		"bun-types": "latest"
 	},
 	"peerDependencies": {
