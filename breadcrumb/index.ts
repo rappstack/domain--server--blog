@@ -1,10 +1,11 @@
+import { post_path_prefix_ } from '@rappstack/domain--any--blog/post'
 import { id_be_id_ref_jsonld_pair_, jsonld_id__new } from '@rappstack/domain--server/jsonld'
 import { request_url__pathname_ } from '@rappstack/domain--server/request'
 import { site__title_, site__website_ } from '@rappstack/domain--server/site'
 import { nullish__none_, tup } from 'ctx-core/function'
 import { isNumber_ } from 'ctx-core/number'
 import { url__join } from 'ctx-core/uri'
-import { id_be_memo_pair_, type request_ctx_T } from 'relysjs/server'
+import { type request_ctx_T } from 'relysjs/server'
 import { id_be_sig_triple_ } from 'rmemo'
 import type { BreadcrumbList } from 'schema-dts'
 export const [
@@ -16,7 +17,7 @@ export const [
 	// Get url array from path
 	// eg: /tags/tailwindcss => ['tags', 'tailwindcss']
 	const breadcrumb_a1 = current_url_path.split('/').slice(1)
-	if (breadcrumb_a1[0] === 'posts' && isNumber_(breadcrumb_a1[1]) && !breadcrumb_a1[1].includes('-')) {
+	if (breadcrumb_a1[0] === post_path_prefix_(ctx) && isNumber_(breadcrumb_a1[1]) && !breadcrumb_a1[1].includes('-')) {
 		breadcrumb_a1.splice(0, 2, `Posts (page ${breadcrumb_a1[1] || 1})`)
 	}
 	return breadcrumb_a1
