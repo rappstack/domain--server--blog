@@ -33,22 +33,22 @@ export const [
 	)=><BreadcrumbList>{
 		'@context': 'https://schema.org',
 		'@type': 'BreadcrumbList',
-		'@id': jsonld_id__new(ctx, '#BreadcrumbList'),
+		'@id': jsonld_id__new(ctx, 'BreadcrumbList'),
 		name: 'BreadcrumbList | ' + site__title_(ctx),
 		itemListElement: [
 			{
 				'@type': 'ListItem',
-				'@id': jsonld_id__new(site__website, '#BreadcrumbList_home'),
+				'@id': jsonld_id__new(site__website, 'BreadcrumbList_home'),
 				position: 1,
 				name: 'Home',
 				item: site__website,
 			},
 			...breadcrumb_a1_(ctx).map((breadcrumb, idx)=>({
 				'@type': 'ListItem',
-				'@id': jsonld_id__new(site__website, `#BreadcrumbList_${breadcrumb.replaceAll('/', '_')}`),
+				'@id': jsonld_id__new(site__website, `BreadcrumbList_${breadcrumb.replaceAll('/', '_')}`),
 				position: idx + 2,
 				name: breadcrumb,
-				item: url__join(site__website, breadcrumb)
+				item: url__join(site__website, 'posts', breadcrumb)
 			}))
 		]
 	})
