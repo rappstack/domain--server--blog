@@ -50,11 +50,11 @@
 	],
 	"dependencies": {
 		"@rappstack/domain--server": "workspace:*",
-		"ctx-core": "^7.2.20",
+		"ctx-core": "^7.2.22",
 		"react": "^18.3.1",
-		"relementjs": "^0.80.19",
-		"relysjs": "^1.21.51",
-		"rmemo": "^0.51.20",
+		"relementjs": "^0.80.21",
+		"relysjs": "^1.21.54",
+		"rmemo": "^0.51.22",
 		"satori": "^0.10.13",
 		"satori-html": "^0.3.2",
 		"zod": "^3.23.8"
