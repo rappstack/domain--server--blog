@@ -53,7 +53,7 @@
 		"ctx-core": "^7.2.27",
 		"react": "^18.3.1",
 		"relementjs": "^0.80.26",
-		"relysjs": "^1.21.63",
+		"relysjs": "^1.21.64",
 		"rmemo": "^0.51.27",
 		"satori": "^0.10.14",
 		"satori-html": "^0.3.2",
