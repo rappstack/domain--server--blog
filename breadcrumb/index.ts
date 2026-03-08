@@ -5,7 +5,7 @@ import { site__title_, site__website_ } from '@rappstack/domain--server/site'
 import { nullish__none_, tup } from 'ctx-core/function'
 import { isNumber_ } from 'ctx-core/number'
 import { url__join } from 'ctx-core/uri'
-import { type request_ctx_T } from 'relysjs/server'
+import { type request_ctx_T } from 'rebuildjs/server'
 import { id_be_sig_triple_ } from 'rmemo'
 import type { BreadcrumbList } from 'schema-dts'
 export const [

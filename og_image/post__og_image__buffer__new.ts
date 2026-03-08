@@ -1,5 +1,5 @@
 import { type Post } from '@rappstack/domain--any--blog/post'
-import { type request_ctx_T } from 'relysjs/server'
+import { type request_ctx_T } from 'rebuildjs/server'
 import satori from 'satori'
 import { post__og_template__new } from './_og_template/index.js'
 import { _satori_options__load } from './_satori_options.js'

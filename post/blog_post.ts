@@ -1,6 +1,6 @@
 import { post_mod_a1_ } from '@rappstack/domain--any--blog/post'
 import { nullish__none_, tup } from 'ctx-core/function'
-import { type request_ctx_T } from 'relysjs/server'
+import { type request_ctx_T } from 'rebuildjs/server'
 import { id_be_memo_pair_ } from 'rmemo'
 import { blog_post_slug_ } from './blog_post_slug.js'
 export const [
