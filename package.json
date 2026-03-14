@@ -1,7 +1,7 @@
 {
 	"name": "@rappstack/domain--server--blog",
 	"type": "module",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "domain library targeting the server for blogs",
 	"keywords": [
 		"rappstack",
@@ -49,7 +49,7 @@
 		"tag"
 	],
 	"dependencies": {
-		"@rappstack/domain--server": "workspace:*",
+		"@rappstack/domain--server": "^0.1.0",
 		"ctx-core": "^7.2.32",
 		"react": "^19.2.4",
 		"relementjs": "^0.80.31",
