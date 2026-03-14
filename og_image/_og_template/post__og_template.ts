@@ -4,7 +4,7 @@ import { type ReactNode } from 'react'
 import { relement__use } from 'relementjs'
 import { div_, p_, span_ } from 'relementjs/html'
 import { server__relement } from 'relementjs/server'
-import { type request_ctx_T } from 'rebuildjs/server'
+import { type request_ctx_T } from 'rhonojs/server'
 import { html } from 'satori-html'
 import { site__title_ } from '../../site/index.js'
 export function post__og_template__new(ctx:request_ctx_T, post:Post) {
