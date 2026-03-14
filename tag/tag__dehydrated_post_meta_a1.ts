@@ -20,6 +20,6 @@ export function tag__dehydrated_post_meta_a1__new(
 	tag:string
 ) {
 	return dehydrated_post_meta_a1.filter(dehydrated_tag_meta=>
-		str_a__slug_a__new(dehydrated_tag_meta.tag_a1)
+		str_a__slug_a__new(dehydrated_tag_meta.tags)
 			.includes(tag))
 }

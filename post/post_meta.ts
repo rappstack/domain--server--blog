@@ -30,7 +30,7 @@ export function post_meta__validate(
 			description_md
 				? { description_html: '' + md__raw_<'server'>({ ctx }, description_md) }
 				: {}),
-		tag_a1: in_dehydrated_post_meta.tag_a1 ?? ['other']
+		tags: in_dehydrated_post_meta.tags ?? ['other']
 	}
 }
 export type in_dehydrated_post_meta_T = {
@@ -44,7 +44,7 @@ export type in_dehydrated_post_meta_T = {
 	updated_date?:string
 	hero_image?:string
 	og_image?:string
-	tag_a1?:string[]
+	tags?:string[]
 	featured?:boolean
 	draft?:boolean
 	canonical_url?:string
