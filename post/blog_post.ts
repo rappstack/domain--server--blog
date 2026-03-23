@@ -95,3 +95,17 @@ export const [
 	'blog_post__description_html',
 	(ctx:request_ctx_T)=>
 		blog_post_mod__meta_(ctx)?.description_html)
+export const [
+	,
+	blog_post__video_url_,
+] = id_be_memo_pair_(
+	'blog_post__video_url',
+	(ctx:request_ctx_T)=>
+		blog_post_mod__meta_(ctx)?.video_url)
+export const [
+	,
+	blog_post__playlist_url_,
+] = id_be_memo_pair_(
+	'blog_post__playlist_url',
+	(ctx:request_ctx_T)=>
+		blog_post_mod__meta_(ctx)?.playlist_url)

@@ -49,4 +49,6 @@ export type in_dehydrated_post_meta_T = {
 	draft?:boolean
 	canonical_url?:string
 	is_pillar?:boolean
+	video_url?:string
+	playlist_url?:string
 }

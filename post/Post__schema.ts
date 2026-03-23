@@ -18,6 +18,8 @@ export const Post__schema = z.object({
 	featured: z.boolean().optional(),
 	draft: z.boolean().optional(),
 	canonical_url: z.string().optional(),
+	video_url: z.string().optional(),
+	playlist_url: z.string().optional(),
 } as {
 	[k in keyof Post['data']]:ZodType<Post['data'][k]>
 })
